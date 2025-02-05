@@ -49,6 +49,8 @@ Live hosts found:
 - **Invalid CIDR Notation**: The script checks for correct CIDR format and informs the user if invalid.
 - **Ping Failures**: If a device does not respond, it is marked as inactive.
 - **Permissions**: On Unix-based systems, you may need `sudo` to run:
+- **CIDR Range**: The script will not attempt to scan beyond the network's broadcast address.
+- **Scanning all hosts**: If script begins to scan all hosts then exit terminal
   ```bash
   sudo python3 network_scan.py
   ```
